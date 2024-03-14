@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_book/pages/RegistrationScreen.dart';
-import 'package:flutter_demo_book/pages/dashboard/DocumentScreen.dart';
+import 'package:flutter_demo_book/pages/dashboard/DocumentListScreen.dart';
 import 'package:flutter_demo_book/utils/colors.dart';
 import 'package:flutter_demo_book/utils/customWidget.dart';
 
@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
         title: const Text('Login'),
       ),
       body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
         child: Column(
           children: [
             const SizedBox(height: 20),
@@ -99,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onTap: () {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
-                        builder: (context) => const DocumentScreen(),
+                        builder: (context) => const DocumentListScreen(),
                       ),
                     );
                   },

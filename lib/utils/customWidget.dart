@@ -61,6 +61,7 @@ appText({
   return Container(
     alignment: Alignment.centerLeft,
     child: Text(
+      softWrap: true,
       textAlign: TextAlign.left,
       title.toString(),
       style: TextStyle(
