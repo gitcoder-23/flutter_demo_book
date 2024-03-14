@@ -119,7 +119,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 children: [
                   appText(
                     title: 'Already have an account?',
-                    fontSize: 20,
+                    fontSize: 16,
                     textColor: blackColor,
                   ),
                   const SizedBox(width: 10),
@@ -133,7 +133,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     },
                     child: appText(
                       title: 'Login',
-                      fontSize: 20,
+                      fontSize: 15,
                       textColor: blueColor,
                       textFontWeight: FontWeight.w500,
                     ),
