@@ -56,6 +56,7 @@ appText({
   required double fontSize,
   String? fontFamily,
   Color? textColor,
+  FontWeight? textFontWeight,
 }) {
   return Container(
     alignment: Alignment.centerLeft,
@@ -66,6 +67,7 @@ appText({
         fontSize: fontSize,
         fontFamily: fontFamily ?? 'DefaultFontFamily',
         color: textColor ?? blackColor,
+        fontWeight: textFontWeight ?? FontWeight.normal,
       ),
     ),
   );
@@ -102,13 +104,14 @@ textfield({
       onTap: ontap,
       controller: controller,
       decoration: InputDecoration(
-          hintText: hinttext,
-          hintStyle: TextStyle(color: greycolor),
-          labelStyle: TextStyle(
-              color: greycolor,
-              fontFamily: fontFamily ?? 'DefaultFontFamily',
-              fontSize: 14),
-          border: InputBorder.none),
+        hintText: hinttext,
+        hintStyle: TextStyle(color: greycolor),
+        labelStyle: TextStyle(
+            color: greycolor,
+            fontFamily: fontFamily ?? 'DefaultFontFamily',
+            fontSize: 14),
+        border: InputBorder.none,
+      ),
     ),
   );
 }
